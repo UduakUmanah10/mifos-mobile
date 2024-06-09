@@ -2,9 +2,7 @@ package org.mifos.mobile.core.ui.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -30,9 +28,9 @@ import androidx.compose.ui.unit.sp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun MifosOutlinedTextField(
-    value: TextFieldValue,
-    onValueChange: (TextFieldValue) -> Unit,
+fun MifosOutlinedTextField2(
+    value: String,
+    onValueChange: (String) -> Unit,
     maxLines: Int = 1,
     singleLine: Boolean = true,
     icon: Int? = null,
@@ -50,7 +48,7 @@ fun MifosOutlinedTextField(
         focusedBorderColor = if (isSystemInDarkTheme()) Color(0xFF9bb1e3) else Color(0xFF325ca8)
     ),
 
-) {
+    ) {
 
     OutlinedTextField(
         value = value,
@@ -80,7 +78,7 @@ fun MifosOutlinedTextField(
         keyboardOptions = KeyboardOptions.Default.copy(
             imeAction = imeAction,
             keyboardType = keyboardType
-            ),
+        ),
         visualTransformation = visualTransformation,
         isError = error,
         supportingText = {

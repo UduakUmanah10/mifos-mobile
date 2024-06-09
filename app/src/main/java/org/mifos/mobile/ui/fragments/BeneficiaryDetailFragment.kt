@@ -18,6 +18,7 @@ import org.mifos.mobile.R
 import org.mifos.mobile.databinding.FragmentBeneficiaryDetailBinding
 import org.mifos.mobile.models.beneficiary.Beneficiary
 import org.mifos.mobile.ui.activities.base.BaseActivity
+import org.mifos.mobile.ui.beneficiary_application.presentation.BeneficiaryApplicationFragment
 import org.mifos.mobile.ui.enums.BeneficiaryState
 import org.mifos.mobile.ui.fragments.base.BaseFragment
 import org.mifos.mobile.utils.BeneficiaryUiState

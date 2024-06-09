@@ -1,4 +1,4 @@
-package org.mifos.mobile.viewModels
+package org.mifos.mobile.ui.beneficiary_application.presentation
 
 import android.util.Log
 import android.view.View
