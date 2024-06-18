@@ -49,7 +49,9 @@ class BeneficiaryAddOptionsFragment : BaseFragment() {
 
                 MifosMobileTheme {
                     BeneficiaryScreen(
-                        topAppbarNavigateback = {},
+                        topAppbarNavigateback = {
+                            requireActivity().onBackPressedDispatcher.onBackPressed()
+                        },
                         addiconClicked = { addManually() },
                         scaniconClicked = { addUsingQrCode() },
                         uploadiconClicked = { addByImportingQrCode() }
@@ -251,9 +253,12 @@ class BeneficiaryAddOptionsFragment : BaseFragment() {
         _binding = null
     }
 
+    override fun onResume() {
+        super.onResume()
+        (activity as? BaseActivity)?.hideToolbar()
+    }
 
     companion object {
-        @JvmStatic
         fun newInstance(): BeneficiaryAddOptionsFragment {
             val fragment = BeneficiaryAddOptionsFragment()
             val args = Bundle()
