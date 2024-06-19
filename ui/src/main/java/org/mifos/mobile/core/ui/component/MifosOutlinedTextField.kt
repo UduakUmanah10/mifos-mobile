@@ -48,10 +48,8 @@ fun MifosOutlinedTextField(
     modifier: Modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
     colors: TextFieldColors = TextFieldDefaults.outlinedTextFieldColors(
         focusedBorderColor = if (isSystemInDarkTheme()) Color(0xFF9bb1e3) else Color(0xFF325ca8)
-    ),
-
+    )
 ) {
-
     OutlinedTextField(
         value = value,
         onValueChange = onValueChange,
@@ -62,9 +60,8 @@ fun MifosOutlinedTextField(
                 Image(
                     painter = painterResource(id = icon),
                     contentDescription = null,
-                    colorFilter = if (isSystemInDarkTheme()) ColorFilter.tint(Color.White) else ColorFilter.tint(
-                        Color.Black
-                    )
+                    colorFilter = if (isSystemInDarkTheme()) ColorFilter.tint(Color.White)
+                    else ColorFilter.tint(Color.Black)
                 )
             }
         } else null,

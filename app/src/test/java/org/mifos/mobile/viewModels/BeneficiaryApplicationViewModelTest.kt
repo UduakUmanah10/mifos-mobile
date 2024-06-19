@@ -26,7 +26,7 @@ import org.mifos.mobile.models.beneficiary.BeneficiaryPayload
 import org.mifos.mobile.models.beneficiary.BeneficiaryUpdatePayload
 import org.mifos.mobile.models.templates.beneficiary.BeneficiaryTemplate
 import org.mifos.mobile.repositories.BeneficiaryRepositoryImp
-import org.mifos.mobile.ui.beneficiary_application.presentation.BeneficiaryApplicationViewModel
+import org.mifos.mobile.ui.beneficiary_application.BeneficiaryApplicationViewModel
 import org.mifos.mobile.util.RxSchedulersOverrideRule
 import org.mifos.mobile.utils.BeneficiaryUiState
 import org.mockito.Mock
